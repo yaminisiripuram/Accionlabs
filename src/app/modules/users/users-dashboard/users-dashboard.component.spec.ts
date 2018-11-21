@@ -32,7 +32,7 @@ describe('UsersDashboardComponent', () => {
     expect(component.gridOptions).toBeDefined();
   }));
 
-  it('should conatin columns', async(() => {
+  it('should contain columns', async(() => {
     expect(component.gridOptions.columns.length).toEqual(3);
   }));
 
@@ -44,7 +44,7 @@ describe('UsersDashboardComponent', () => {
     expect(getQuoteSpy.calls.any()).toBe(false);
   });
 
-  it('should render call sorting method in a h4 tag', async(() => {
+  it('should render call sorting method in a th tag', async(() => {
     spyOn(component, 'doSorting');
     const compiled = fixture.debugElement.nativeElement;
     const el = compiled.querySelector('th');
